@@ -1,0 +1,158 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_image_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-16 23:11+0000\n"
+"PO-Revision-Date: 2022-02-16 23:11+0000\n"
+"Last-Translator: <m.jurke@gmx.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_image_management
+#: model:ir.model.fields,field_description:website_image_management.field_product_image__display_name
+#: model:ir.model.fields,field_description:website_image_management.field_product_product__display_name
+#: model:ir.model.fields,field_description:website_image_management.field_product_template__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_view_tree
+msgid "Download"
+msgstr ""
+
+#. module: website_image_management
+#: model:ir.actions.act_window,name:website_image_management.product_image_action_website
+#: model:ir.ui.menu,name:website_image_management.menu_catalog_images
+#: model:ir.ui.menu,name:website_image_management.menu_website_catalog_images
+msgid "Extra Media"
+msgstr "Zusätzliche Produktmedien"
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_search_view
+msgid "Group By"
+msgstr "Gruppieren Nach"
+
+#. module: website_image_management
+#: model:ir.model.fields,field_description:website_image_management.field_product_image__id
+#: model:ir.model.fields,field_description:website_image_management.field_product_product__id
+#: model:ir.model.fields,field_description:website_image_management.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_search_view
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_view_tree
+msgid "Image"
+msgstr "Bild"
+
+#. module: website_image_management
+#: model:ir.model.fields,field_description:website_image_management.field_product_image____last_update
+#: model:ir.model.fields,field_description:website_image_management.field_product_product____last_update
+#: model:ir.model.fields,field_description:website_image_management.field_product_template____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_template_form_view
+msgid "List View Images"
+msgstr "Bilder der Listenansicht"
+
+#. module: website_image_management
+#: model:ir.model.fields,field_description:website_image_management.field_product_image__main_image
+#: model:ir.model.fields,field_description:website_image_management.field_product_product__website_product_image_id
+#: model:ir.model.fields,field_description:website_image_management.field_product_template__website_product_image_id
+msgid "Main Image"
+msgstr "Hauptbild"
+
+#. module: website_image_management
+#: model:ir.model.fields,field_description:website_image_management.field_product_image__mouseover_image
+#: model:ir.model.fields,field_description:website_image_management.field_product_product__website_mouseover_image_id
+#: model:ir.model.fields,field_description:website_image_management.field_product_template__website_mouseover_image_id
+msgid "Mouseover Image"
+msgstr "Mouseover-Bild"
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.view_product_image_form
+msgid "Options"
+msgstr "Optionen"
+
+#. module: website_image_management
+#: model:ir.model,name:website_image_management.model_product_product
+msgid "Product"
+msgstr "Produkt"
+
+#. module: website_image_management
+#: model:ir.model,name:website_image_management.model_product_image
+msgid "Product Image"
+msgstr "Produktbild"
+
+#. module: website_image_management
+#: model:ir.model,name:website_image_management.model_product_template
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_search_view
+msgid "Product Template"
+msgstr "Produktvorlage"
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_search_view
+msgid "Product Variant"
+msgstr "Produktvariante"
+
+#. module: website_image_management
+#: model:ir.model.fields,help:website_image_management.field_product_image__main_image
+msgid ""
+"Show this image first in details view, and as product image in grid view if "
+"activated."
+msgstr ""
+"Dieses Bild in der Detailansicht zuerst anzeigen und, wenn aktiviert, als "
+"Hauptbild in der Shop-Listenansicht nutzen."
+
+#. module: website_image_management
+#: model:ir.model.fields,help:website_image_management.field_product_image__mouseover_image
+msgid "Show this image on mouse hover in list view."
+msgstr ""
+"Dieses Bild in der Shop-Listenansicht anzeigen, wenn man die Maus darüber "
+"hält."
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_search_view
+msgid "Template Images"
+msgstr "Vorlagenbilder"
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_template_form_view
+msgid "Use Extra Media"
+msgstr "Zusätzliche Produktmedien nutzen"
+
+#. module: website_image_management
+#: model:ir.model.fields,field_description:website_image_management.field_product_product__website_use_main_extra_image
+#: model:ir.model.fields,field_description:website_image_management.field_product_template__website_use_main_extra_image
+msgid "Use extra media as shop image"
+msgstr "Zusätzliche Produktmedien als Shop-Bilder nutzen"
+
+#. module: website_image_management
+#: model:ir.model.fields,field_description:website_image_management.field_product_image__use_in_details_view
+msgid "Use in details view"
+msgstr "In Detailansicht nutzen"
+
+#. module: website_image_management
+#: model:ir.model.fields,help:website_image_management.field_product_product__website_use_main_extra_image
+#: model:ir.model.fields,help:website_image_management.field_product_template__website_use_main_extra_image
+msgid ""
+"Use the extra media instead of the product image in the website. Mark the "
+"checkbox 'Main image' of the desired extra media attachment."
+msgstr ""
+"Nutzen Sie Zusätzliche Produktmedien anstelle des Standard-Produktbildes in "
+"der Shop-Ansicht. Markieren sie dafür 'Hauptbild' im gewünschten "
+"Zusätzlichen Produktmedium."
+
+#. module: website_image_management
+#: model_terms:ir.ui.view,arch_db:website_image_management.product_image_search_view
+msgid "Variant Images"
+msgstr "Variantenbilder"

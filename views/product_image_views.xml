@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record model="ir.ui.view" id="view_product_image_form">
+    <field name="name">product.image.form</field>
+    <field name="model">product.image</field>
+    <field name="inherit_id" ref="website_sale.view_product_image_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='video_url']" position="after">
+        <group string="Options">
+          <field name="main_image"/>
+          <field name="mouseover_image"/>
+          <field name="use_in_details_view"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="product_image_view_tree" model="ir.ui.view">
+    <field name="name">product.image.view.tree</field>
+    <field name="model">product.image</field>
+    <field name="priority">10</field>
+    <field name="arch" type="xml">
+      <tree string="Image">
+        <field name="image_128" widget="image" height="64"/>
+        <field name="name"/>
+        <field name="product_tmpl_id" widget="many2one"/>
+        <field name="product_variant_id" widget="many2one"/>
+        <field name="image_1920" string="Download" widget="binary" filename="image_1920"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="product_image_search_view" model="ir.ui.view">
+    <field name="name">product.image.search</field>
+    <field name="model">product.image</field>
+    <field name="arch" type="xml">
+      <search string="Image">
+        <field name="name" string="Image"/>
+        <field string="Product Template" name="product_tmpl_id"/>
+        <field string="Product Variant" name="product_variant_id"/>
+        <separator/>
+        <filter
+          string="Template Images"
+          name="product_tmpl_id"
+          domain="[('product_variant_id', '=', False)]"/>
+        <filter
+          string="Variant Images"
+          name="product_variant_id"
+          domain="[('product_tmpl_id', '=', False)]"/>
+        <separator/>
+        <group expand="1" string="Group By">
+          <filter
+            string="Product Template"
+            name="product_template"
+            context="{'group_by':'product_tmpl_id'}"/>
+          <filter
+            string="Product Variant"
+            name="product_variant"
+            context="{'group_by':'product_variant_id'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record id="product_image_action_website" model="ir.actions.act_window">
+    <field name="name">Extra Media</field>
+    <field name="res_model">product.image</field>
+    <field name="view_mode">kanban,tree,form,activity</field>
+    <field name="view_id" ref="product_image_view_tree"/>
+    <field name="search_view_id" ref="product_image_search_view"/>
+    <field name="context">{}</field>
+  </record>
+
+  <menuitem
+    id="menu_catalog_images"
+    name="Extra Media"
+    action="product_image_action_website"
+    parent="sale.product_menu_catalog"
+    sequence="10"/>
+
+  <menuitem
+    id="menu_website_catalog_images"
+    name="Extra Media"
+    action="product_image_action_website"
+    parent="website_sale.menu_catalog"
+    sequence="10"/>
+
+</odoo>

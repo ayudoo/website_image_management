@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record model="ir.ui.view" id="product_template_form_view">
+    <field name="name">product.template.form</field>
+    <field name="model">product.template</field>
+    <field name="inherit_id" ref="website_sale.product_template_form_view"/>
+    <field name="arch" type="xml">
+      <xpath expr="//group[@name='product_template_images']" position="before">
+        <group name="product_template_images" string="List View Images">
+          <div colspan="2">
+            <field name="website_use_main_extra_image"/>
+            <label for="website_use_main_extra_image" string="Use Extra Media"/>
+          </div>
+          <div attrs="{'invisible': [('website_use_main_extra_image','=',False)]}">
+            <div style="font-weight: bold;">
+              <label for="website_product_image_id" style="font-weight: bold; margin: 0px;"/>
+            </div>
+            <field
+              name="website_product_image_id"
+              class="o_website_sale_image_list"
+              context="{'default_name': name}"
+              mode="kanban"
+              options="{'limit': 1, 'create': false, 'create_edit': false}"
+              nolabel='1'/>
+          </div>
+          <div attrs="{'invisible': [('website_use_main_extra_image','=',False)]}">
+            <div style="font-weight: bold;">
+              <label for="website_mouseover_image_id" style="font-weight: bold; margin: 0px;"/>
+            </div>
+            <field
+              name="website_mouseover_image_id"
+              class="o_website_sale_image_list"
+              context="{'default_name': name}"
+              mode="kanban"
+              options="{'limit': 1, 'create': false, 'create_edit': false}"
+              nolabel='1'/>
+          </div>
+        </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>

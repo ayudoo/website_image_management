@@ -1,0 +1,22 @@
+#wrapwrap #wrap {
+  .oe_product_cart .oe_product_image a {
+    position: relative;
+
+    .wim_mouseover_image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .wim_mouseover_image {
+        opacity: 1;
+      }
+    }
+  }
+}
