@@ -23,7 +23,7 @@ class ProductProduct(models.Model):
                 record.image_1920 = record.image_variant_1920
             elif record.product_tmpl_id.website_use_main_extra_image:
                 if not record.product_tmpl_id.website_product_image_id:
-                    record.product_tmpl_id._compute_website_product_image_id()
+                    record.product_tmpl_id._compute_website_image_ids()
                 if record.product_tmpl_id.website_product_image_id:
                     record.image_1920 = (
                         record.product_tmpl_id.website_product_image_id.image_1920
@@ -37,7 +37,7 @@ class ProductProduct(models.Model):
                 record.image_1024 = record.image_variant_1024
             elif record.product_tmpl_id.website_use_main_extra_image:
                 if not record.product_tmpl_id.website_product_image_id:
-                    record.product_tmpl_id._compute_website_product_image_id()
+                    record.product_tmpl_id._compute_website_image_ids()
                 if record.product_tmpl_id.website_product_image_id:
                     record.image_1024 = (
                         record.product_tmpl_id.website_product_image_id.image_1024
@@ -51,7 +51,7 @@ class ProductProduct(models.Model):
                 record.image_512 = record.image_variant_512
             elif record.product_tmpl_id.website_use_main_extra_image:
                 if not record.product_tmpl_id.website_product_image_id:
-                    record.product_tmpl_id._compute_website_product_image_id()
+                    record.product_tmpl_id._compute_website_image_ids()
                 if record.product_tmpl_id.website_product_image_id:
                     record.image_512 = (
                         record.product_tmpl_id.website_product_image_id.image_512
@@ -65,7 +65,7 @@ class ProductProduct(models.Model):
                 record.image_256 = record.image_variant_256
             elif record.product_tmpl_id.website_use_main_extra_image:
                 if not record.product_tmpl_id.website_product_image_id:
-                    record.product_tmpl_id._compute_website_product_image_id()
+                    record.product_tmpl_id._compute_website_image_ids()
                 if record.product_tmpl_id.website_product_image_id:
                     record.image_256 = (
                         record.product_tmpl_id.website_product_image_id.image_256
@@ -79,7 +79,7 @@ class ProductProduct(models.Model):
                 record.image_128 = record.image_variant_128
             elif record.product_tmpl_id.website_use_main_extra_image:
                 if not record.product_tmpl_id.website_product_image_id:
-                    record.product_tmpl_id._compute_website_product_image_id()
+                    record.product_tmpl_id._compute_website_image_ids()
                 if record.product_tmpl_id.website_product_image_id:
                     record.image_128 = (
                         record.product_tmpl_id.website_product_image_id.image_128
