@@ -28,6 +28,8 @@ class ProductProduct(models.Model):
                     record.image_1920 = (
                         record.product_tmpl_id.website_product_image_id.image_1920
                     )
+                else:
+                    record.image_1920 = False
             else:
                 record.image_1920 = record.product_tmpl_id.image_1920
 
@@ -42,6 +44,8 @@ class ProductProduct(models.Model):
                     record.image_1024 = (
                         record.product_tmpl_id.website_product_image_id.image_1024
                     )
+                else:
+                    record.image_1024 = False
             else:
                 record.image_1024 = record.product_tmpl_id.image_1024
 
@@ -56,6 +60,8 @@ class ProductProduct(models.Model):
                     record.image_512 = (
                         record.product_tmpl_id.website_product_image_id.image_512
                     )
+                else:
+                    record.image_512 = False
             else:
                 record.image_512 = record.product_tmpl_id.image_512
 
@@ -70,6 +76,8 @@ class ProductProduct(models.Model):
                     record.image_256 = (
                         record.product_tmpl_id.website_product_image_id.image_256
                     )
+                else:
+                    record.image_256 = False
             else:
                 record.image_256 = record.product_tmpl_id.image_256
 
@@ -84,6 +92,8 @@ class ProductProduct(models.Model):
                     record.image_128 = (
                         record.product_tmpl_id.website_product_image_id.image_128
                     )
+                else:
+                    record.image_128 = False
             else:
                 record.image_128 = record.product_tmpl_id.image_128
 
