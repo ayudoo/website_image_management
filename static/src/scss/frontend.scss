@@ -4,6 +4,7 @@
 
     .wim_mouseover_image {
       position: absolute;
+      z-index: 1;
       top: 0;
       bottom: 0;
       left: 0;
@@ -11,6 +12,9 @@
       pointer-events: none;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
+      .img {
+        width: 100%;
+      }
     }
 
     &:hover {

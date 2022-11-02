@@ -17,6 +17,7 @@
               <label for="website_product_image_id" style="font-weight: bold; margin: 0px;"/>
             </div>
             <field
+              style="margin-left: -15px"
               name="website_product_image_id"
               class="o_website_sale_image_list"
               context="{'default_name': name}"
@@ -29,6 +30,7 @@
               <label for="website_mouseover_image_id" style="font-weight: bold; margin: 0px;"/>
             </div>
             <field
+              style="margin-left: -15px"
               name="website_mouseover_image_id"
               class="o_website_sale_image_list"
               context="{'default_name': name}"

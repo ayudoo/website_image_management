@@ -21,4 +21,9 @@
         'views/product_template_views.xml',
         'views/templates.xml',
     ],
+    "assets": {
+        "web.assets_frontend": [
+            "website_image_management/static/src/scss/frontend.scss",
+        ],
+    },
 }
