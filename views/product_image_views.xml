@@ -77,13 +77,13 @@
     name="Extra Media"
     action="product_image_action_website"
     parent="sale.product_menu_catalog"
-    sequence="10"/>
+    sequence="33"/>
 
   <menuitem
     id="menu_website_catalog_images"
     name="Extra Media"
     action="product_image_action_website"
     parent="website_sale.menu_catalog"
-    sequence="10"/>
+    sequence="33"/>
 
 </odoo>
