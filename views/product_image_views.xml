@@ -22,7 +22,7 @@
     <field name="priority">10</field>
     <field name="arch" type="xml">
       <tree string="Image">
-        <field name="image_128" widget="image" height="64"/>
+        <field name="image_128" widget="image" class="oe_avatar" options="{'size': [64, 64]}"/>
         <field name="name"/>
         <field name="product_tmpl_id" widget="many2one"/>
         <field name="product_variant_id" widget="many2one"/>
