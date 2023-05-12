@@ -17,7 +17,13 @@ class ProductTemplate(models.Model):
             main_image = False
             mouseover_image = False
             if record.website_use_main_extra_image:
-                for pti in record.product_template_image_ids:
+                # there is some inconsistent behavior resulting in access permission
+                # errors when vising the same shop page again
+                # Due to security restrictions, you are not allowed to access 'Product' (product.template) records
+                # although the product is fully published. It does not happen when
+                # refreshing the page.
+                record_sudo = record.sudo()
+                for pti in record_sudo.product_template_image_ids:
                     if not main_image and pti.main_image:
                         main_image = pti
                     if not mouseover_image and pti.mouseover_image:
