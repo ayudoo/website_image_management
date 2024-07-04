@@ -25,5 +25,8 @@
         "web.assets_frontend": [
             "website_image_management/static/src/scss/frontend.scss",
         ],
+        "web.assets_backend": [
+            "website_image_management/static/src/scss/backend.scss",
+        ],
     },
 }
