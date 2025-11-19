@@ -16,7 +16,7 @@
             <label for="website_use_main_extra_image" string="Use Extra Media"/>
           </div>
           <div colspan="2" class="row">
-            <div attrs="{'invisible': [('website_use_main_extra_image','=',False)]}" class="col-6 d-inline-block">
+            <div invisible="not website_use_main_extra_image" class="col-6 d-inline-block">
               <div style="font-weight: bold;">
                 <label for="website_product_image_id" style="font-weight: bold;"/>
               </div>
@@ -27,9 +27,9 @@
                 context="{'default_name': name}"
                 mode="kanban"
                 options="{'limit': 1, 'create': false, 'create_edit': false}"
-                nolabel='1'/>
+                nolabel="1"/>
             </div>
-            <div attrs="{'invisible': [('website_use_main_extra_image','=',False)]}" class="col-6 d-inline-block">
+            <div invisible="not website_use_main_extra_image" class="col-6 d-inline-block">
               <div style="font-weight: bold;">
                 <label for="website_mouseover_image_id" style="font-weight: bold;"/>
               </div>
@@ -40,7 +40,7 @@
                 context="{'default_name': name}"
                 mode="kanban"
                 options="{'limit': 1, 'create': false, 'create_edit': false}"
-                nolabel='1'/>
+                nolabel="1"/>
             </div>
           </div>
         </group>
