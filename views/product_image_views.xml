@@ -21,13 +21,13 @@
     <field name="model">product.image</field>
     <field name="priority">10</field>
     <field name="arch" type="xml">
-      <tree string="Image">
+      <list string="Image">
         <field name="image_128" widget="image" class="oe_avatar" options="{'size': [64, 64]}"/>
         <field name="name"/>
         <field name="product_tmpl_id" widget="many2one"/>
         <field name="product_variant_id" widget="many2one"/>
         <field name="image_1920" string="Download" widget="binary" filename="image_1920"/>
-      </tree>
+      </list>
     </field>
   </record>
 
@@ -66,7 +66,7 @@
   <record id="product_image_action_website" model="ir.actions.act_window">
     <field name="name">Extra Media</field>
     <field name="res_model">product.image</field>
-    <field name="view_mode">kanban,tree,form,activity</field>
+    <field name="view_mode">kanban,list,form,activity</field>
     <field name="view_id" ref="product_image_view_tree"/>
     <field name="search_view_id" ref="product_image_search_view"/>
     <field name="context">{}</field>

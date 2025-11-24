@@ -5,7 +5,7 @@ Website Image Management
    :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
    :alt: License: LGPL-3
 
-**This is the Odoo 17 branch.**
+**This is the Odoo 18 branch.**
 
 Configure your shop list main images by product eCommerce extra media, add mouseover
 images and decide, which images are to be show in the product's detail view.
